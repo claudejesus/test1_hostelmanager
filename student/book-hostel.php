@@ -219,7 +219,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">SELECT BED</h4>
                                     <div class="form-group mb-4">
-                                        <select class="custom-select mr-sm-2" id="duration" name="duration">
+                                        <select class="custom-select mr-sm-2" id="duration" name="bed">
                                             <option selected>Choose...</option>
                                             <option value="1">One </option>
                                             <option value="2">Two </option>
