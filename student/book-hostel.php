@@ -273,7 +273,7 @@
                     </div>
                     
 
-                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <!-- <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Total Amount</h4>
@@ -282,7 +282,7 @@
                                     </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                   
                 
                 </div>
@@ -509,7 +509,7 @@
                     </div>
 
 
-                    <h4 class="card-title mt-5">Permanent Address Information</h4>
+                    <!-- <h4 class="card-title mt-5">Permanent Address Information</h4>
 
 
                     <div class="row">
@@ -529,7 +529,7 @@
                         </div>
                         
                     
-                    </div>
+                    </div> -->
 
                     
                     <h5 class="card-title mt-5">Please fill up the form "ONLY IF" you've different permanent address!</h5>
