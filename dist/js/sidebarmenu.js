@@ -1,12 +1,5 @@
-/*
-Template Name: Admin Template
-Author: Wrappixel
 
-File: js
-*/
-// ============================================================== 
 // Auto select left navbar
-// ============================================================== 
 $(function() {
     "use strict";
      var url = window.location + "";
