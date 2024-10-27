@@ -150,6 +150,9 @@
                                                 <option value="3">Three Seater</option>
                                                 <option value="4">Four Seater</option>
                                                 <option value="5">Five Seater</option>
+                                                <option value="3">Six Seater</option>
+                                                <option value="4">Seven Seater</option>
+                                                <option value="5">Eight Seater</option>
                                             </select>
                                         </div>
                                 </div>

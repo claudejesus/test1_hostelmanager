@@ -60,7 +60,7 @@
     function getSeater(val) {
         $.ajax({
         type: "POST",
-        url: "get-seater.php",
+        url: "get-bed.php",
         data:'roomid='+val,
         success: function(data){
         //alert(data);
@@ -70,7 +70,7 @@
 
         $.ajax({
         type: "POST",
-        url: "get-seater.php",
+        url: "get-bed.php",
         data:'rid='+val,
         success: function(data){
         //alert(data);
@@ -172,10 +172,6 @@
 				?>	
 
 
-                <!-- <div class="col-7 align-self-center">
-                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Hostel Bookings</h4>
-                    </div> -->
-
                 
                 <div class="row">
 
@@ -223,9 +219,9 @@
                     <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Seater</h4>
+                                <h4 class="card-title">Bed</h4>
                                     <div class="form-group">
-                                        <input type="text" id="seater" name="seater" placeholder="Enter Seater No." required class="form-control">
+                                        <input type="text" id="seater" name="seater" placeholder="Enter bed No." required class="form-control">
                                     </div>
                             </div>
                         </div>

@@ -7,7 +7,7 @@
     if(isset($_POST['submit'])){
         $seater=$_POST['seater'];
         $roomno=$_POST['rmno'];
-        $fees=$_POST['fee'];
+        // $fees=$_POST['fee'];  //before
         $sql="SELECT room_no FROM rooms where room_no=?";
         $stmt1 = $mysqli->prepare($sql);
         $stmt1->bind_param('i',$roomno);
@@ -17,9 +17,11 @@
         if($row_cnt>0){
             echo"<script>alert('Room already exist!');</script>";
         } else {
-            $query="INSERT into  rooms (seater,room_no,fees) values(?,?,?)";
+            // $query="INSERT into  rooms (seater,room_no,fees) values(?,?,?)"; //before
+            $query="INSERT into  rooms (seater,room_no) values(?,?)";
             $stmt = $mysqli->prepare($query);
-            $rc=$stmt->bind_param('iii',$seater,$roomno,$fees);
+            // $rc=$stmt->bind_param('iii',$seater,$roomno,$fees); //before
+            $rc=$stmt->bind_param('ii',$seater,$roomno);
             $stmt->execute();
                 echo"<script>alert('Room has been added');</script>";
         }
@@ -140,15 +142,18 @@
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="card-title">Seater</h4>
+                                    <h4 class="card-title">Bed</h4>
                                         <div class="form-group mb-4">
                                             <select class="custom-select mr-sm-2" id="seater" name="seater" required="required">
-                                                <option value="">Select Seater...</option>
-                                                <option value="1">Single Seater</option>
-                                                <option value="2">Two Seater</option>
-                                                <option value="3">Three Seater</option>
-                                                <option value="4">Four Seater</option>
-                                                <option value="5">Five Seater</option>
+                                                <option value="">Select Bed...</option>
+                                                <option value="1">Single Bed</option>
+                                                <option value="2">Two Bed</option>
+                                                <option value="3">Three Bed</option>
+                                                <option value="4">Four Bed</option>
+                                                <option value="5">Five Bed</option>
+                                                <option value="5">Six Bed</option>
+                                                <option value="4">Seven Bed</option>
+                                                <option value="5">Eight Bed</option>
                                             </select>
                                         </div>
                                 </div>
@@ -156,7 +161,7 @@
                         </div>
 
 
-                        <div class="col-sm-12 col-md-6 col-lg-4">
+                        <!-- <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title">Total Fees</h4>
@@ -165,7 +170,7 @@
                                         </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
 
 
