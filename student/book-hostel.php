@@ -219,7 +219,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">SELECT BED</h4>
                                     <div class="form-group mb-4">
-                                        <select class="custom-select mr-sm-2" id="duration" name="bed">
+                                        <select class="custom-select mr-sm-2" id="duration" name="duration">
                                             <option selected>Choose...</option>
                                             <option value="1">One </option>
                                             <option value="2">Two </option>
@@ -229,10 +229,10 @@
                                             <option value="6">Six </option>
                                             <option value="7">Seven </option>
                                             <option value="8">Eight </option>
-                                            <!-- <option value="9">Nine Month</option>
+                                            <option value="9">Nine Month</option>
                                             <option value="10">Ten Month</option>
                                             <option value="11">Eleven Month</option>
-                                            <option value="12">Twelve Month</option> -->
+                                            <option value="12">Twelve Month</option>
                                         </select>
                                     </div>
                               
@@ -273,7 +273,7 @@
                     </div>
                     
 
-                    <!-- <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title">Total Amount</h4>
@@ -282,7 +282,7 @@
                                     </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                   
                 
                 </div>
