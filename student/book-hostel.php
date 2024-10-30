@@ -38,7 +38,7 @@
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-<!-- By Netgoplus - Netgoplus.com -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,7 +78,7 @@
         });
     }
     </script>
-    <!-- By Netgoplus - Netgoplus.com -->
+    
 </head>
 
 <body>
